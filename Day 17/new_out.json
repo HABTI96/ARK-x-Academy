@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 12 Pro",
+    "price": 1099.99
+  },
+  {
+    "id": 2,
+    "name": "sumsung jmqdsklf",
+    "price": 9999.6
+  },
+  {
+    "id": 3,
+    "name": "sumsung j6",
+    "price": 9999.6
+  },
+  {
+    "id": 4,
+    "name": "MacBook Pro 16",
+    "price": 2399.99
+  },
+  {
+    "id": 5,
+    "name": "DJI Mavic Air 2",
+    "price": 799.99
+  },
+  {
+    "id": 12,
+    "name": "sony experia",
+    "price": 9999.6
+  }
+]
