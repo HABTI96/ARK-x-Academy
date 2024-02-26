@@ -9,6 +9,7 @@ function save_data(){
 const get_product = (req, res)=>{
     res.send(products)
 }
+
 const get_search = (req, res)=>{
     const min = req.query.minPrice
     const max = req.query.maxPrice
@@ -54,7 +55,6 @@ const put_product = (req, res)=>{
 const delet_porduct = (req, res)=>{
     const id_url = req.params.id
     const find_obj = products.findIndex(x=>x.id == id_url)
-    
     products.splice(find_obj, 1)
     res.send(products)
     save_data()

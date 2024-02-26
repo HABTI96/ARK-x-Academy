@@ -8,7 +8,7 @@ app.use((req, res,next)=>{ // the log middelware
     next()
 })
 app.use(express.json())  // for update and add data
-app.use("/api", router) // i made the 'user' as the router
+app.use("/api", router) // i made the 'api' as the router
 
 app.use((err, req, res, next) => {
     console.error(err.stack)
