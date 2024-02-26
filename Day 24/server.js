@@ -1,11 +1,12 @@
 const express  = require("express")
 const app = express()
 
-
+app.use(express.urlencoded({extended:false}))
 app.get("/", (req, res)=>{
 	res.send(`<h1>mohammed habti</h1>`)
 })
 
+const users = []
 app.get("/login", (req, res)=>{
 	res.send(`
 	<h1> REGISTER </h1>
@@ -40,7 +41,7 @@ app.get("/register", (req, res)=>{
 	</div>	
 	<div>	
 		<label>Password</label>
-		<input type = "Password" id = "Password" name = "Password">
+		<input type = "password" id = "password" name = "password">
 	</div>
 	<button type = "submit">Register</button>
 		</form>
@@ -48,6 +49,14 @@ app.get("/register", (req, res)=>{
 	`)
 })
 app.post("/register", (req, res)=>{
+	users.push({
+		name:req.body.name,
+		email:req.body.email,
+		password:req.body.password
+	})
+	// console.log(req.body.name)
+	console.log(users)
+	res.redirect("/login")
 	
 })
 app.listen(3000, ()=>{
