@@ -1,0 +1,47 @@
+mongosh		  			// first line to start
+
+show dbs		 		// show all datebase
+
+use nameDB	 			// create new database but i won't be shown because is empty we have to create collection
+					// we can also use it to switch to anthore Database
+
+
+show collections			     // show collections that you creat
+
+db.dropDatabase()			     // delete database
+
+
+db.createCollection('collectionName')	  	// add collection (table) to thee database
+
+
+db.collectionName.insert({key:'value'}) 	// add data to the collection
+//example : db.categorie.insert({type:"value"}) // we have collection = categorie ,
+//db.product.insert({name:'iphone X', price:'500',id:'165'})
+
+db.collectionName.find({})			// display all things that i added (objects)
+//db.product.find({})
+
+db.clients.find({age:"27"})			// if you wanna look for specific key
+
+
+db.collectionName.drop()			// remove collection from database
+db.collectionName.deleteOne({key:value})	// remove an key from collection
+
+
+
+db.clients.insertMany([				// for creating many data
+	{name:"mohammed habti", age:"27", city:"casablanca"},
+	{name:"ark",age:"20", city:"rabat"},
+	{name:"abdo", age:"23",city:"casa"},
+	{name:"omar",age:"24",city:"agadir"}
+])
+
+
+
+
+//update an object the first part for looking for an collection and the sencond for updating new value
+db.collectionName.updateOne({name:"simo"}, {$set:{name:"mohammed"}})
+db.clients.updateOne({ name: "Arkadian" }, { $set: { age: 99 } })
+db.clients.updateOne({name:"omar"},{$set:{name:"omar dosantos"}})
+
+

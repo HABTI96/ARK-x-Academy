@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(15, 15, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+nav{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* border: solid 1px red; */
+    
+}
+
+.play-btn{
+    background-color: rgb(87, 104, 179);
+    padding: 5px;
+}
+.logo, .menu{
+    margin: 0 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.menu ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+li > a:hover{
+    background-color: rgb(83, 165, 165);
+}
+input{
+    background-color: rgb(15, 15, 78);
+}
+.search, .subscribe{
+    background-color:  rgb(76, 76, 185);
+    color: white;
+}
+.search-txt:focus{
+    background-color: violet;
+}

@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(15, 15, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+.play-btn1{
+    background-color: rgb(87, 104, 179);
+    padding:10px 50px;
+    border-radius: 5px;
+}
+.play-btn2{
+    /* background-color: aqua; */
+    padding:10px 50px;
+    border-radius: 5px;
+}
+.logo{
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    float: left;    
+    list-style: none;
+    padding: 10px;
+}
+
+.subsc{
+    display: flex;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li:hover{
+    background-color: rgb(83, 165, 165);
+}
+.search, .subscribe{
+    background-color:  rgb(76, 76, 185);
+    color: white;
+    border-radius: 5px;
+    padding: 6px 15px;
+    margin-left:0 10px;
+    border: none;
+}
+.search-txt, select{
+    background-color: rgb(15, 15, 78);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    border: 1px blue solid;
+}
+.search-txt:focus{
+    background-color: violet;
+}
+input{
+    margin-right: 10px;
+}
+.subscribe{
+    margin-left: 15px;
+}
+::placeholder {
+    color: white;
+}
+/* ---------------hero-section---------------*/
+.info-movie p{
+    /* float:  left; */
+    display: inline;
+    padding: 10px;
+}
+.play-watch{
+    margin: 30px 0px;
+}
+
+
+
+/* ---------------footer------------------- */
+.ftr-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.menu-footer{
+    list-style: none;
+}
+
+.ftr-section h3{
+    padding: 10px 0;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright ul{
+    list-style: none;
+}
+.copyright ul li{
+    display: inline;
+    padding: 10px;
+}
+.menu-footer li{
+    padding: 7px 2px;
+}
+
